@@ -4,45 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Kings of Canna</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="outer-wrapper">
-      <div class="wrapper"> 
-        <section class="slide one">
-          <article class="vh-center">
-            <p class="center"><img src="images/flower_macro.png">
-            <br class="center">I'm more content!
-            </p>
-          </article>
-        </section>
-        <section class="slide two">
-          <article class="vh-center">
-            <p class="center">I'm more content!</p> <p class="center"><img src="images/extracts.png">
-                <br class="center">I'm more content!
-                </p>
-          </article>
-        </section>
-        <section class="slide three">
-          <article class="vh-center">
-            <p class="center">I'm more content!</p> <p class="center"><img src="images/edibles.png">
-                <br class="center">I'm more content!
-                </p>
-          </article>
-        </section>
-        <section class="slide four">
-          <article class="vh-center">
-            <p class="center">I'm more content!</p> 
-            <p class="center"> <img src="images/lotion.png">
-                <br class="center">I'm more content!
-                </p>
-          </article>
-        </section>
-      </div>
-    </div>
+    <main>
+      <section class="slide one" id="one">
+        <article class="vh-center">
+          <div class="left"><img class="animate__animated animate__fadeInUp" src="images/flower_macro.png" /></div>
+          <div class="right animate__animated animate__fadeInUp"><p class="center">I'm more content!</p></div>
+        </article>
+      </section>
+      <section class="slide two" id="two">
+        <article class="vh-center">
+          <div class="left"><img class="animate__animated" src="images/extracts.png" /></div>
+          <div class="right animate__animated"><p class="center">I'm more content!</p></div>
+        </article>
+      </section>
+      <section class="slide three" id="three">
+        <article class="vh-center">
+          <p class="center"><img src="images/edibles.png" /> <br class="center" />I'm more content!</p>
+        </article>
+      </section>
+      <section class="slide four" id="four">
+        <article class="vh-center">
+          <p class="center">I'm more content!</p>
+          <p class="center"><img src="images/lotion.png" /> <br class="center" />I'm more content!</p>
+        </article>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/inview.min.js"></script>
+    <script>
+      var inview = new Waypoint.Inview({
+        element: document.getElementById('two'),
+        handler: function (direction) {
+          notify('right-in-view inview triggered')
+          $('.animate__animated').addClass('animate__fadeInUp')
+          alert
+        },
+        context: document.getElementById('two'),
+        offset: 'right-in-view'
+      })
+    </script>
   </body>
 </html>
