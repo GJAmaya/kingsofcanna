@@ -9,6 +9,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   .wrapper {
     display: flex;
@@ -39,13 +40,13 @@
   }
   
   .one {
-    background: #000000;
+    background: #ffffff;
   }
   .two {
     background: #000000;
   }
   .three {
-    background: #000000;
+    background: #ffffff;
   }
   .four {
     background: #000000;
