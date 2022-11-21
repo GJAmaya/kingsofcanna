@@ -3,6 +3,9 @@
   }
   body {
     margin: 0;
+    height: 100%;
+    width: 100%;
+    color:#ffffff;
   }
   .slide {
     width: 100vw;
@@ -40,13 +43,13 @@
   }
   
   .one {
-    background: #ffffff;
+    background: #000000;
   }
   .two {
     background: #000000;
   }
   .three {
-    background: #ffffff;
+    background: #000000;
   }
   .four {
     background: #000000;
