@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   color: #ffffff;
+  background: #000000;
 }
 img {
   width: 100%;
