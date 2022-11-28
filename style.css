@@ -49,6 +49,9 @@ img {
   display: none;
 }
 
+a {
+  color: white;
+}
 .one {
   background: #000000;
 }
