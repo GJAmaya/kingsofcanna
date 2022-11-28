@@ -16,7 +16,7 @@ img {
   display: flex;
   align-items: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: large;
+  font-size: medium;
 }
 
 .vh-center {
@@ -67,3 +67,4 @@ img {
 .center {
   text-align: center;
 }
+
