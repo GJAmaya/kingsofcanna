@@ -27,7 +27,7 @@ img {
 .vh-leftcenter {
   display: flex;
   margin: auto auto;
-  width: 80%;
+  width: 70%;
 }
 .vh-center div {
   flex: 1;
