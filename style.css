@@ -67,3 +67,10 @@ img {
 .center {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .vh-center {
+    flex-direction: column;
+    width: 90%;
+  }
+}
