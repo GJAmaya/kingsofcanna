@@ -16,12 +16,18 @@ img {
   display: flex;
   align-items: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
 }
 
 .vh-center {
   display: flex;
   margin: auto auto;
   width: 60%;
+}
+.vh-leftcenter {
+  display: flex;
+  margin: auto auto;
+  width: 80%;
 }
 .vh-center div {
   flex: 1;
@@ -53,6 +59,9 @@ img {
   background: #000000;
 }
 .four {
+  background: #000000;
+}
+.five {
   background: #000000;
 }
 .center {
