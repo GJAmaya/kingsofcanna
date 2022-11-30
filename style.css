@@ -16,7 +16,7 @@ img {
   display: flex;
   align-items: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: medium;
+  font-size: small;
 }
 
 .vh-center {
@@ -70,10 +70,22 @@ a {
 .center {
   text-align: center;
 }
+nav ul {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  flex: 20%;
+  white-space: nowrap;
 
 @media screen and (max-width: 768px) {
   .vh-center {
     flex-direction: column;
     width: 90%;
   }
+}
 }
